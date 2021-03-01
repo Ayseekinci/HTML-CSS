@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+
+</head>
+
+<body>
+
+    <form name="kayit " action="=kayit.aspx" method="GET" autocapitalize="on">
+
+        <h1>Üye Kayıt Form </h1>
+        <tr>
+            <td>Ad Soyad :</td><br>
+            <td><input type="text" required></td>
+
+        </tr><br>
+        <tr>
+            <td>Email:</td><br>
+            <td><input type="email" required></td>
+        </tr><br>
+        <tr>
+            <td>Parola:</td><br>
+            <td><input type="password" required></td>
+        </tr><br>
+
+        <tr>
+
+            <td>Cinsiyet :</td>
+            <td><input type="checkbox">Kadın</td>
+            <td><input type="checkbox">Erkek</td>
+        </tr><br>
+        <tr>
+            <td>Medeni Durum :</td>
+            <td><input type="checkbox">Evli</td>
+            <td><input type="checkbox">Bekar</td>
+        </tr><br>
+
+        <td> Doğum yeri : </td><select name="dogumyeri">
+            <option>Adana</option>
+            <option>Adıyaman</option>
+            <option>Afyon</option>
+            <option>Ağrı</option>
+            <option>İstanbul</option>
+            <option>Ankara</option>
+            <option>Muğla</option>
+            <option>İzmir</option>
+            <option>Şanlıurfa</option>
+            <option>Malatya</option>
+            <option>Elazığ</option>
+            <option>Bitlis</option>
+
+        </select><br><br>
+        <textarea name="message" id="message" rows="10" cols="20" placeholder="İletmek istediğiniz mesaj"></textarea>
+        <br>
+        <tr>
+
+            <td><input type="reset"><input type="submit" </td>
+        </tr>
+
+    </form>
+</body>
+
+</html>
