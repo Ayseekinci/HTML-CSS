@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link/İnput</title>
+    <style>
+        a {
+            font-size: 24px;
+            text-decoration: none;
+            /* linkin altındaki çizgi*/
+        }
+
+        a:link {
+            /*tıklanmadan önceki rengi*/
+            color: green;
+        }
+
+        a:visited {
+            /*tıklanmışsa rengi */
+            color: red;
+        }
+
+        a:hover {
+            /*üzerine geldiğinde rengi */
+            color: blue;
+        }
+
+        a:active {
+            /*tam tıklarken rengi*/
+            color: orange;
+        }
+
+        input {
+            font-size: 24px;
+            padding: 10px;
+            border-radius: 5px;
+            /*kenarlarının belli ovalleşme oluşur.*/
+            border: 5px solid black;
+            /*kenar kalınlığı ve rengi*/
+        }
+
+        input:focus {
+            /*tıklandıktan sonraki genişliği ve  rengi*/
+            border: 2px solid red;
+        }
+
+        .paragraf1 {
+            font-size: 24px;
+            letter-spacing: 2px;
+            /*harfler arası boşluk*/
+            line-height: 30px;
+            /*satırlar arası boşluk*/
+        }
+
+        /*ilk satırın rengini değiştirir.*/
+        /* .paragraf1::first-line {
+            color: red; } */
+
+        /*İlk harf ile ilgili işlemler */
+        /* .paragraf1::first-letter {   
+            color: blue;
+            font-size: 50px;} */
+
+        /*paragraf sonrası ekleme*/
+        /* .paragraf1::after {
+            content: url("./icerik/logo.jpg");} */
+
+        /*paragraf öncesi ekleme*/
+        /* .paragraf1::before {
+            content: ("Paragraf öncesi")} */
+
+        /*ilk paragrafda değişiklik yapar*/
+        /*p:nth-child(1) {
+            color: red;}*/
+
+        /*çift sayılarda değişiklil yapar(2.ve 4. paragrafta)*/
+        /* p:nth-child(even) {
+            color: orange;}*/
+
+        /*tek sayılarda değişiklik yapar(1,3,5)*/
+        /*p:nth-child(odd) {
+            color: yellow;}*/
+    </style>
+</head>
+
+<body>
+    <!--<a href="">Link Örnekleri</a>
+    <input type="text" placeholder="Name" />-->
+
+    <!-- <p class="paragraf1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus obcaecati ullam sunt omnis sit deleniti
+        recusandae reprehenderit natus soluta esse ipsam, ratione dolor iusto a in minima tempora? Inventore dolores
+        nemo magni, facere sit deleniti? Mollitia excepturi tenetur quisquam, eius doloremque ipsum illum provident
+        molestiae ea dolor soluta vero voluptatum?
+    </p>-->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, non.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, quia.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, quibusdam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, non?</p>
+</body>
+
+</html>
