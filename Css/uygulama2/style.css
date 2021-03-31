@@ -3,13 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-.kutu {
-    width: 10px;
-    height: 10px;
-    border: 5px;
-}
-
 #menu{
     height: 100px;
     width: 1000px;
