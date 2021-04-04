@@ -1,0 +1,91 @@
+
+#navbar{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 75px;
+}
+
+
+#navbar .desktop-menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#navbar .desktop-menu li a{
+    padding: 0.75rem;
+}
+#navbar .desktop-menu li a:hover{
+    background: #336ea2;
+    border-radius: 5px;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid grey;
+}
+#home img{
+    max-height: 100%;
+    height: auto;
+    border-radius: 100%;
+}
+#home .name h2{
+    margin-bottom: 0.50rem;
+}
+#home .name p{
+    opacity: 0.6;
+    font-style: italic;
+}
+
+#egitimler{
+    color:#fff;
+    padding: 1rem;
+}
+#egitimler .items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#egitimler .items .item{
+    width: 33%;
+    text-align: center;
+    padding: 0.5rem;
+}
+.egitimm{
+    margin-top: 2rem;
+    display: flex;
+}
+.egitimm .resim1{
+    border-radius: 8px; 
+}
+.egitimm .egitim1 .resim1{
+    margin-left: 5px;
+}
+.egitimm .egitim2 .resim1{
+    margin-left: 65px;
+}
+.egitimm .egitim3 .resim1{
+    margin-left: 120px;
+}
+.egitimm p{
+    font-style: italic;
+    text-indent: 10px;
+    color: #062e51;
+    font-weight: bold;
+}
+.egitimm .egitim1 p{
+    margin-left: 5px;
+}
+.egitimm .egitim2 p{
+    margin-left: 65px;
+}
+.egitimm .egitim3 p{
+    margin-left: 120px;
+}
