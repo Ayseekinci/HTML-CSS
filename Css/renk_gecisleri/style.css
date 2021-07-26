@@ -1,0 +1,51 @@
+.box{
+    height: 200px;
+    width: 200px;
+    /*Yukarıdan Asagıya
+    background-image: linear-gradient(orange,red);*/
+    /*Asagıdan yukarı
+    background-image: linear-gradient(to top,orange,red);*/
+    /*Soldan baslayıp saga dogru
+    background-image: linear-gradient(to right, orange,red);*/
+    /*Sagdan baslayıp sola dogru
+    background-image: linear-gradient(to left,orange,red);*/
+    /*Sag alt koseden sol ust koseye dogru
+    background-image: linear-gradient(to top left,orange,red);*/
+    /*Sol ust kosedan sag alt koseye dogru
+    background-image: linear-gradient(to bottom right,orange,red);*/
+
+    /*45derecelik acıyla sol alt koseden sag ust koseye dogru
+    background-image: linear-gradient(45deg,orange,red);*/
+
+    /*Bulanıklı ve coklu renk (baslangıc ve bitis degerler vererek)
+    background-image: linear-gradient(orange 0 13%,red 20% 28%,green 40% 48%,blue 60% 68%,purple 80% 88% );*/
+
+    /*Fransa Bayragı yapımı
+    background-image: linear-gradient(to right,#0c1c8d 33%,#fff 33% 66%,#ef2b2f 66%);*/
+
+
+    background-image: linear-gradient(to right ,transparent, rgba(0,255,0,.5) ),
+                        linear-gradient(to left, transparent ,rgba(255,0,0.5)),
+                        url(resimler/image1.jpg);
+    background-size: cover;
+
+}
+.box2{
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+   /*renklerlin merkezi noktadan yayılması */
+    background-image: repeating-radial-gradient(lime,green);
+
+    background-image: radial-gradient(at right,lime,blue);
+}
+.box3{
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    /*Kendini Tekrar eden renk gecisleri 
+    background-image: repeating-linear-gradient(blue 0 5px,yellow 5px 10px);*/
+    background-image: repeating-radial-gradient(lime 0 5px,blue 5px 10px,red 10px 15px);
+    border-radius: 50%;
+
+}
