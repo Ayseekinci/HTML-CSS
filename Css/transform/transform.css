@@ -1,0 +1,95 @@
+.box{
+    width:245px;
+    height: 200px;
+    position: relative;
+}
+.box .front , .box .back{ 
+    width: inherit;/*boxın yüksekliği ve genişliği neyse front ve back aynısı oluyor*/
+    height: inherit;
+    backface-visibility: hidden;
+    position: absolute;/*ust uste gelsin*/
+    transition: 2s transform;
+}
+img{
+    width: inherit;
+    height: inherit;
+}
+.back h2{
+    font-size: 20px;
+    margin-left: 15px;
+    color: rgb(128, 93, 117);
+}
+.back p{
+    font-size: 15px;
+    color: rgb(121, 207, 233);
+}
+.box .front{
+    background-color: lightblue;
+}
+.box .back{
+    background-color: rgb(240, 234, 235);
+    transform: rotateY(-180deg);
+}
+.box:hover .front{
+    transform: rotateY(-180deg);
+}
+.box:hover .back{
+    transform: rotateY(0);
+}
+.button{
+    margin-top: 15px;
+    border-top: 5px;
+    display: block;
+    line-height: 50px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid rgb(221, 183, 190);
+    width: 200px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.button::before{
+    content: '';/*bi icerik eklenmeyecek*/
+    transition: 1s left;
+    width: 100%;
+    height: 100%;
+    position: absolute;/*en yakın konumlandırılmış ataya göre konumlandır*/
+    top: 0;
+    left: -120%;
+    z-index: -1;
+    transform: skew(-10deg);
+    background-color: lightblue;
+}
+.button:hover::before{
+    left: -30%;
+}
+.movie{
+    width:245px;
+    height: 200px;
+    position: relative;
+}
+.movie:hover{
+    transform: scale(2);
+   
+}
+.movie:hover::after{
+    margin-top: 50px;
+}
+.movie .movie-img , .movie .movie-onizleme{
+    width: inherit;
+    height: inherit;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: 3s transform;
+}
+.movie .movie-img{
+    width: inherit;
+    height: inherit;
+}
+.movie-onizleme p{
+    font-size: 15px;
+
+}
