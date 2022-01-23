@@ -1,0 +1,242 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  outline: 0;
+  text-decoration: none;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --renk1:#FCE5CD;
+  --renk2:#F7D7B5;
+  --renk3:#351C71;
+  --renk4:#E69139;
+  --pre-color: #2D2D2D;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--renk3);
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 800;
+  letter-spacing: .3px;
+  color: var(--renk3);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--renk4);
+  letter-spacing: .3px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: .3px;
+}
+
+.intro {
+  background-color: var(--renk1);
+  height: calc(100vh - 50px);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: [intro-left] 1fr [intro-sidebar] 250px;
+      grid-template-columns: [intro-left] 1fr [intro-sidebar] 250px;
+  -ms-grid-rows: 1fr auto;
+      grid-template-rows: 1fr auto;
+      grid-template-areas: 'intro-left intro-sidebar' 'intro-footer intro-sidebar';
+}
+
+.intro .intro-left {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: intro-left;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+}
+
+.intro .intro-left h1 {
+  padding-bottom: 10px;
+}
+
+.intro .intro-sidebar {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: intro-sidebar;
+  background-color: var(--renk2);
+  padding: 35px;
+  overflow: auto;
+}
+
+.intro .intro-sidebar section:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.intro .intro-sidebar section h3 {
+  padding-bottom: 10px;
+}
+
+.intro .intro-sidebar section ul li a {
+  display: block;
+  padding: 3px 0;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 18px;
+  color: #333333;
+}
+
+.intro .intro-footer {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: intro-footer;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: .4px;
+  padding-bottom: 50px;
+  color: #333;
+}
+
+main .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 900px 2fr;
+      grid-template-columns: 1fr 900px 2fr;
+}
+
+main footer {
+  background-color: var(--renk3);
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  padding: 15px 0;
+}
+
+main header {
+  background-color: var(--renk3);
+}
+
+main header .container {
+  height: 50px;
+}
+
+main header h2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main header h2 a {
+  color: var(--renk4);
+  text-decoration: none;
+}
+
+main .content {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  padding: 30px 30px 30px 0;
+  line-height: 150%;
+}
+
+main .content h2 {
+  font-size: 36px;
+  color: var(--renk3renk3);
+  letter-spacing: .4px;
+  margin-bottom: 40px;
+}
+
+main .content pre {
+  background-color: var(--pre-color);
+  margin-bottom: 25px;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-family: Monaco, Consolas;
+}
+
+main .content code {
+  font-size: 14px;
+  background-color: var(--renk1);
+  font-family: Monaco, Consolas;
+}
+
+main .content h3 {
+  font-size: 20px;
+  color: var(--renk3renk3);
+  letter-spacing: .4px;
+  margin-bottom: 20px;
+}
+
+main .content h3 code {
+  font-size: 18px;
+}
+
+main .content p {
+  margin-bottom: 25px;
+}
+
+main .content section {
+  scroll-margin: 25px;
+}
+
+main .content section:not(:last-child) {
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 50px;
+  padding-bottom: 25px;
+}
+
+main .content blockquote {
+  border-left: 5px solid var(--renk4);
+  padding-left: 25px;
+  margin-bottom: 25px;
+}
+
+main .sidebar {
+  -ms-grid-column: 3;
+  grid-column: 3/3;
+  background-color: var(--renk2);
+  padding: 25px 40px;
+  width: 180px;
+  margin-left: 60px;
+}
+
+main .sidebar .version {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+main .sidebar nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 25px;
+}
+
+main .sidebar nav ul li {
+  margin-bottom: 5px;
+}
+
+main .sidebar nav ul li a {
+  display: block;
+  padding: 3px 0;
+  font-size: 17px;
+}
+/*# sourceMappingURL=style.css.map */
